@@ -298,7 +298,7 @@ class RestCRUDView(BaseCRUDView):
         return d
 
     @expose_api(name="get", url="/api/get/<pk>", methods=["GET"])
-    @has_access_api
+    #@has_access_api
     @permission_name("show")
     def api_get(self, pk):
         """
